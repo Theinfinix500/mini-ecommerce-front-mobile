@@ -5,7 +5,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
   selector: 'app-products',
   standalone: true,
   imports: [ProductListComponent],
-  templateUrl: './product-page.component.html',
-  styleUrl: './product-page.component.scss',
+  templateUrl: './product.page.component.html',
+  styleUrl: './product.page.component.scss',
 })
 export class ProductPageComponent {}

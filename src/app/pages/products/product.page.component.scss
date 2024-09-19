@@ -3,9 +3,10 @@
   gap: 2rem;
   justify-content: space-between;
   max-width: 64.5rem;
-  margin: 1rem auto;
+  margin: 4rem auto 0 auto;
 
   &__list {
     flex: 1 0 auto;
+    padding-bottom: 3rem;
   }
 }
