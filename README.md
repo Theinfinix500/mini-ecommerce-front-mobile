@@ -12,6 +12,7 @@ This is a mobile frontend for a mini ecommerce application, built using modern w
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Docker Instructions](#docker-instructions)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
@@ -64,6 +65,48 @@ Make sure you have the following installed:
 
    ```bash
    npm install
+   ```
+
+## Docker Instructions
+
+You can build and run this project using Docker.
+
+### Build the Docker image
+
+1. Ensure you have Docker installed and running on your machine.
+   
+2. Run the following command in the root directory of your project to build the Docker image:
+
+   ```bash
+   docker build -t mini-ecommerce-front-mobile .
+   ```
+
+   This will create a Docker image tagged as `mini-ecommerce-front-mobile`.
+
+### Run the Docker container
+
+1. To run the app inside a Docker container, use the following command:
+
+   ```bash
+   docker run -p 8100:8100 mini-ecommerce-front-mobile
+   ```
+
+   This will start the application and make it accessible at `http://localhost:8100`.
+
+### Docker Compose (Optional)
+
+If you have a `docker-compose.yml` file, you can also use Docker Compose to manage the build and run process.
+
+1. Start the services:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+2. Stop the services:
+
+   ```bash
+   docker-compose down
    ```
 
 ### Usage
