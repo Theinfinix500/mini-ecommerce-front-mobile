@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <ul class="navbar__list">
+    <li class="navbar__item">
+      <a
+        class="font-bold text-5xl"
+        [routerLink]="['/products']"
+        [routerLinkActive]="'navbar__active'"
+        >Products</a
+      >
+    </li>
+    <li class="navbar__item navbar__cart">
+      <a
+        class="flex"
+        [routerLink]="['/cart']"
+        [routerLinkActive]="'navbar__active'"
+      >
+        <span
+          class="product__add-to-cart-icon-left pi pi-cart-arrow-down"
+        ></span>
+        <span
+          class="bg-red-600 text-white p-0.5 rounded-full text-xs px-1.5 -mt-2 -ml-2"
+          >{{ cartItemsList$ | async }}</span
+        >
+      </a>
+    </li>
+  </ul>
+</nav>
