@@ -2,8 +2,11 @@
 
 This is a mobile frontend for a mini ecommerce application, built using modern web technologies.
 
+[![Demo](https://img.shields.io/badge/Demo-Live-blue)](https://mini-ecommerce-front-mobile-vgjf.vercel.app/products)
+
 ## Table of Contents
 
+- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
@@ -13,6 +16,10 @@ This is a mobile frontend for a mini ecommerce application, built using modern w
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Demo
+
+Check out the live demo of the app here: [Live Demo](https://mini-ecommerce-front-mobile-vgjf.vercel.app/products)
 
 ## Features
 
