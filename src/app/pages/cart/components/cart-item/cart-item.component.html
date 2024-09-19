@@ -1,48 +1,32 @@
 <div class="cart-item">
   <div class="cart-item__commands">
-    <button
-      (click)="removeFromCart(cartItem.product.id)"
-      type="button"
-      class=""
-    >
+    <button (click)="removeFromCart(cartItem.product.id)" type="button">
       <span class="product__add-to-cart-icon-left pi pi-trash"></span>
     </button>
   </div>
   <div class="cart-item__content">
     <div class="cart-item__image">
-      <img
-        [src]="cartItem.product.image"
-        [alt]="cartItem.product.title"
-        class=""
-      />
+      <img [src]="cartItem.product.image" [alt]="cartItem.product.title" />
     </div>
     <div class="cart-item__details">
-      <h1 class="">
+      <h1>
         {{ cartItem.product.title }}
       </h1>
     </div>
     <div>
       <div class="cart-item__quantity">
-        <button
-          (click)="decreaseQuantity(cartItem.product.id)"
-          type="button"
-          class=""
-        >
+        <button (click)="decreaseQuantity(cartItem.product.id)" type="button">
           -
         </button>
-        <span class="">
+        <span>
           {{ cartItem.quantity }}
         </span>
-        <button
-          (click)="increaseQuantity(cartItem.product.id)"
-          type="button"
-          class=""
-        >
+        <button (click)="increaseQuantity(cartItem.product.id)" type="button">
           +
         </button>
       </div>
       <div class="cart-item__price">
-        <p class="">
+        <p>
           {{ cartItem.product.price | currency : "EUR" }}
         </p>
       </div>
