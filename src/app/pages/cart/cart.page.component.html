@@ -1,0 +1,27 @@
+<div class="shopping-cart">
+  <div class="shopping-cart__header">
+    <h1 class="">Shopping Cart</h1>
+    <button class="" (click)="clearCart()">Clear cart</button>
+  </div>
+
+  <div class="shopping-cart__content">
+    <div class="">
+      <div class="shopping-cart__list">
+        @if (cartItems$ | async; as cartItems) { @for (cartItem of cartItems;
+        track $index) {
+        <app-cart-item [cartItem]="cartItem" />
+        } @empty {
+        <p class="">Your cart is empty.</p>
+        } }
+      </div>
+    </div>
+
+    <div class="shopping-cart__footer">
+      <div class="">
+        <p class="">
+          Total <span>{{ cartItemsTotal$ | async | currency : "EUR" }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

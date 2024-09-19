@@ -1,0 +1,51 @@
+<div class="cart-item">
+  <div class="cart-item__commands">
+    <button
+      (click)="removeFromCart(cartItem.product.id)"
+      type="button"
+      class=""
+    >
+      <span class="product__add-to-cart-icon-left pi pi-trash"></span>
+    </button>
+  </div>
+  <div class="cart-item__content">
+    <div class="cart-item__image">
+      <img
+        [src]="cartItem.product.image"
+        [alt]="cartItem.product.title"
+        class=""
+      />
+    </div>
+    <div class="cart-item__details">
+      <h1 class="">
+        {{ cartItem.product.title }}
+      </h1>
+    </div>
+    <div>
+      <div class="cart-item__quantity">
+        <button
+          (click)="decreaseQuantity(cartItem.product.id)"
+          type="button"
+          class=""
+        >
+          -
+        </button>
+        <span class="">
+          {{ cartItem.quantity }}
+        </span>
+        <button
+          (click)="increaseQuantity(cartItem.product.id)"
+          type="button"
+          class=""
+        >
+          +
+        </button>
+      </div>
+      <div class="cart-item__price">
+        <p class="">
+          {{ cartItem.product.price | currency : "EUR" }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
